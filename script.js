@@ -3,34 +3,34 @@
 // pushing p :p
 // Send "disable" in Discord to disable it
 
-const prefixes = [
+let prefixes = [
     'pushing :regional_indicator_p: ',
     'yall aint :regional_indicator_p: ',
     'im :regional_indicator_p: ',
     ':p '
 ]
 
-const suffixes = [
+let suffixes = [
     ' pushing :regional_indicator_p:',
     ' yall aint :regional_indicator_p:',
     ' im :regional_indicator_p:',
     ':p'
 ]
 
-const substitutions = {
+let substitutions = {
     'p': ' :regional_indicator_p: '
 }
 
-const addAffixes = (str) => prefixes[Math.floor(Math.random() * prefixes.length)] + str + suffixes[Math.floor(Math.random() * suffixes.length)];
-const substitute = (str) => {
-    const replacements = Object.keys(substitutions)
+let addAffixes = (str) => prefixes[Math.floor(Math.random() * prefixes.length)] + str + suffixes[Math.floor(Math.random() * suffixes.length)];
+let substitute = (str) => {
+    let replacements = Object.keys(substitutions)
     replacements.forEach((x) => {
         str = str.split(x).join(substitutions[x]);
         str = str.split(x.toUpperCase()).join(substitutions[x]);
     })
     return str
 }
-const p = (str) => addAffixes(substitute(str))
+let p = (str) => addAffixes(substitute(str))
 
 var storedSend = XMLHttpRequest.prototype.send;
 
