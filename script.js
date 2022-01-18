@@ -4,16 +4,16 @@
 // Send "disable" in Discord to disable it
 
 const prefixes = [
-    'pushing :regional_indicator_p:',
-    'yall aint :regional_indicator_p:',
-    'im :regional_indicator_p:',
-    ':p'
+    'pushing :regional_indicator_p: ',
+    'yall aint :regional_indicator_p: ',
+    'im :regional_indicator_p: ',
+    ':p '
 ]
 
 const suffixes = [
-    'pushing :regional_indicator_p:',
-    'yall aint :regional_indicator_p:',
-    'im :regional_indicator_p:',
+    ' pushing :regional_indicator_p:',
+    ' yall aint :regional_indicator_p:',
+    ' im :regional_indicator_p:',
     ':p'
 ]
 
