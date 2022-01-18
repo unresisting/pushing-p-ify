@@ -5,20 +5,20 @@
 
 const prefixes = [
     'pushing :regional_indicator_p:',
-    'y'all aint :regional_indicator_p:',
+    'yall aint :regional_indicator_p:',
     'im :regional_indicator_p:',
     ':p'
 ]
 
 const suffixes = [
     'pushing :regional_indicator_p:',
-    'y'all aint :regional_indicator_p:',
+    'yall aint :regional_indicator_p:',
     'im :regional_indicator_p:',
     ':p'
 ]
 
 const substitutions = {
-    'p': ' :regional_indicator_p: ',
+    'p': ' :regional_indicator_p: '
 }
 
 const addAffixes = (str) => prefixes[Math.floor(Math.random() * prefixes.length)] + str + suffixes[Math.floor(Math.random() * suffixes.length)];
